@@ -83,7 +83,7 @@ This project helped me practice:
 
 ```bash
 git clone <https://github.com/HAFSA-TAHIR133/Cataas-Cat-Generator/edit/main>
-cd CATAAS
+cd Cataas-Cat-Generator
 pnpm install
 pnpm run dev
 ```
