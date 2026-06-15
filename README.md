@@ -82,8 +82,8 @@ This project helped me practice:
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd cat-image-generator
+git clone <https://github.com/HAFSA-TAHIR133/Cataas-Cat-Generator/edit/main>
+cd CATAAS
 pnpm install
 pnpm run dev
 ```
