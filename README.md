@@ -1,119 +1,94 @@
 #  CATAAS Cat Generator
 
-A React-based web application that generates random cat images using the Cataas API. Users can explore cats by tags, custom text, and styling options like font size and color.
+A React application that generates random cat images using a public Cat API. The project demonstrates API integration, React Hooks, conditional rendering, and global state management using the React Context API.
 
----
+## Features
 
-##  Features
+* Generate random cat images with a single click.
+* Fetch data from an external Cat API.
+* Responsive and user-friendly interface.
+* Global state management using React Context API.
+* Automatic image generation counter displayed in the Navbar.
+* Real-time UI updates without prop drilling.
+* Loading and error handling for API requests.
 
-*  Generate random cat images
-*  Search cats by tags (cute, funny, sleepy, etc.)
-*  Display cats with custom text
-*  Customize text with font size and color
-*  Loading indicator while fetching images
-*  Error handling for invalid inputs or failed requests
-*  Reusable components (Loader, Error, CatImage)
-
----
-
-##  Tech Stack
+## Technologies Used
 
 * React.js
 * JavaScript (ES6+)
-* HTML5
+* React Hooks (useState, useEffect, useContext)
+* React Context API
 * CSS3
-* Cataas API
+* REST API Integration
 
----
+## How It Works
 
-##  Installation
+1. User clicks the **Generate Image** button.
+2. A request is sent to the Cat API.
+3. A new cat image is displayed on the screen.
+4. The Context API updates the global image counter.
+5. The Navbar automatically reflects the updated number of generated images.
 
-```bash
-git clone https://github.com/your-username/random-cat-explorer.git
-cd random-cat-explorer
-pnpm install
-pnpm run dev
-```
+## Learning Outcomes
 
----
+This project helped me practice:
 
-##  API Used
-
-[Cataas API](https://cataas.com/#/)
-Used for fetching random and customized cat images.
-
----
-
-##  Project Structure
-
-```
-src/
-│
-├── components/
-│   ├── CatImage.jsx
-│   ├── Loader.jsx
-│   ├── Error.jsx
-│   └── Navbar.jsx
-│
-├── pages/
-│   ├── RandomCat.jsx
-│   ├── TagCat.jsx
-│   ├── CatSays.jsx
-│   └── CustomCat.jsx
-│   └── gifCat.jsx
-│
-├── services/
-│   └── catServices.js
-│
-└── App.jsx
-```
-
----
-
-##  What I Learned
-
-* React state management using useState
-* Handling side effects using useEffect
-* API integration in React
-* Component reusability
+* API fetching with Fetch/Axios
+* React component architecture
+* State management with React Hooks
+* Global state sharing using Context API
+* Avoiding prop drilling
+* Dynamic UI updates
 * Error and loading state handling
-* Clean project structure with service layer
-
----
 
 ##  Preview
 
 # Home Page
 
-<img width="1920" height="827" alt="image" src="https://github.com/user-attachments/assets/192369bf-cfc1-4955-8f20-208fd7eb0c4f" />
+<img width="1920" height="827" alt="image" src="https://github.com/user-attachments/assets/168c300c-7f76-4d85-a6fa-fb6b2c438325" />
 
-# Cat Says Component (saying Hello Hafsa)
+# Cat Says Component (saying Hello Hafsa & the count becomes 1)
 
-<img width="1920" height="973" alt="image" src="https://github.com/user-attachments/assets/4b354daf-bdbc-4591-968d-ef08d8147e55" />
+<img width="1920" height="1021" alt="image" src="https://github.com/user-attachments/assets/947f5d21-aa6d-476d-968c-b6adfd33a36b" />
 
-# Generate Cat By Tag(cute)
+# Generate Cat By Tag(cute & count becomes 2)
 
-<img width="1920" height="1561" alt="image" src="https://github.com/user-attachments/assets/09bc22e0-287c-4e14-8801-0fd743e7dfaa" />
+<img width="1920" height="1327" alt="image" src="https://github.com/user-attachments/assets/7dbb0c8a-9de0-4100-97ab-433ada6f50fc" />
 
-# Custom Cat (text="Hello Hafsa" FontSize=50 Color="Orange")
+# Custom Cat (text="Hello Hafsa" FontSize=50 Color="Orange" & count becomes 3)
 
-<img width="1920" height="1528" alt="image" src="https://github.com/user-attachments/assets/3034a197-5b6a-497d-9870-c815d1ffb69c" />
+<img width="1920" height="1224" alt="image" src="https://github.com/user-attachments/assets/3d4e7958-532e-4f8e-8722-562b1180f574" />
 
-# Random Cat Generate
+# Random Cat Generate (count becomes 4)
 
-<img width="1920" height="1278" alt="image" src="https://github.com/user-attachments/assets/c40960d7-f6ba-4923-80fd-41f974b108d5" />
+<img width="1920" height="1102" alt="image" src="https://github.com/user-attachments/assets/e1734fb4-1749-428d-ad07-d00c4a8fdccf" />
 
-# Get a Gif Cat
+# Get a Gif Cat (count becomes 5)
 
-<img width="1920" height="972" alt="image" src="https://github.com/user-attachments/assets/d27dfcc6-7917-45f1-ad00-d1e051bf2a0e" />
+<img width="1920" height="994" alt="image" src="https://github.com/user-attachments/assets/96b6bff8-7789-44b9-ac9b-343dc3d8736d" />
 
-# Generate a random image with Tag "Cute" & Say "A Little Star"
+# Generate a random image with Tag "Cute" & Say "A Little Star (count becomes 6)"
 
-<img width="1920" height="1342" alt="image" src="https://github.com/user-attachments/assets/0074cecc-8fac-4e9d-89ab-ca216bf867fe" />
+<img width="1920" height="1036" alt="image" src="https://github.com/user-attachments/assets/f24bc8d0-9790-4b2c-8f18-756bc26e6fe9" />
 
----
+## Future Improvements
 
-##  Author
+* Download generated images
+* Save favorite cats
+* Search by cat breed
+* Dark/Light mode
+* Image generation history
 
-**Hafsa**
-GitHub: https://github.com/HAFSA-TAHIR133
+## Installation
+
+```bash
+git clone <repository-url>
+cd cat-image-generator
+pnpm install
+pnpm run dev
+```
+
+## Author
+
+Hafsa Tahir
+
