@@ -1,0 +1,449 @@
+/* nav bar styling */
+.link-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #2c3e50; 
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; 
+}
+
+/* Individual Link styling */
+.link-items a {
+  color: #ecf0f1; 
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease; 
+}
+
+.link-items a:hover {
+  background-color: #34495e; 
+  color: #3498db; 
+  transform: translateY(-2px); 
+}
+
+/* Responsive adjustment for mobile devices */
+@media (max-width: 768px) {
+  .link-items {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .link-items a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* tag cat class */
+
+.tag-cat-class {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tag-cat-class h2 {
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.tag-cat-class input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.tag-cat-class input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db; 
+}
+
+.tag-cat-class button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.tag-cat-class button:hover {
+  background-color: #2980b9;
+}
+
+.tag-cat-class button:active {
+  transform: scale(0.98); 
+}
+
+/* Spacing out states/components inside the container */
+.tag-cat-class > *:not(h2):not(input):not(button) {
+  margin-top: 20px;
+}
+
+/* Radmom cat class */
+
+.random-cat-class {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.random-cat-class h2 {
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.random-cat-class button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2ecc71; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.2);
+  transition: all 0.2s ease;
+}
+
+.random-cat-class button:hover {
+  background-color: #27ae60;
+  box-shadow: 0 6px 16px rgba(39, 174, 96, 0.3);
+  transform: translateY(-1px);
+}
+
+.random-cat-class button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
+}
+
+/* Loading, Error, and Image container spacing */
+.random-cat-class > *:not(h2):not(button) {
+  margin-top: 24px;
+}
+
+/* Gif cat class/component */
+
+
+.gif-cat-class button {
+  width: 100%;
+  padding: 14px;
+  background-color: #9b59b6; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2);
+  transition: all 0.2s ease;
+}
+
+.gif-cat-class button:hover {
+  background-color: #8e44ad;
+  box-shadow: 0 6px 16px rgba(142, 68, 173, 0.3);
+  transform: translateY(-1px);
+}
+
+.gif-cat-class button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(142, 68, 173, 0.2);
+}
+
+/* Loader, Error, and Image container spacing */
+.gif-cat-class > *:not(h2):not(button) {
+  margin-top: 24px;
+}
+
+/* cat says text */
+
+.cat-say-class {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.cat-say-class h2 {
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.cat-say-class input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.cat-say-class input[type="text"]:focus {
+  outline: none;
+  border-color: #e67e22; 
+}
+
+/* Button styling */
+.cat-say-class button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e67e22; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cat-say-class button:hover {
+  background-color: #d35400;
+}
+
+.cat-say-class button:active {
+  transform: scale(0.98);
+}
+
+/* Spacing out elements inside the card */
+.cat-say-class > *:not(h2):not(input):not(button) {
+  margin-top: 20px;
+}
+
+/* tag says compnent */
+
+.tag-says-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.tag-says-container h1 {
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+/* tag cat says input fields gap */
+.cat-tag-says-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.cat-tag-says-inputs input{
+    padding: 10px;
+}
+
+.cat-tag-says-inputs input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.cat-tag-says-inputs input[type="text"]:focus {
+  outline: none;
+  border-color: #16a085; 
+}
+
+.tag-says-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.tag-says-container button:hover {
+  background-color: #16a085;
+}
+
+.tag-says-container button:active {
+  transform: scale(0.98);
+}
+
+/* Space out components underneath the action elements */
+.tag-says-container > *:not(h1):not(input):not(button) {
+  margin-top: 20px;
+}
+
+/* custom cat container */
+
+.custom-cat-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 35px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.custom-cat-container h1 {
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+}
+
+.custom-cat-container input[type="text"],
+.custom-cat-container input[type="number"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.custom-cat-container input:focus {
+  outline: none;
+  border-color: #e74c3c; 
+}
+
+.custom-cat-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b6b; 
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.custom-cat-container button:hover {
+  background-color: #ee5253;
+}
+
+.custom-cat-container button:active {
+  transform: scale(0.98);
+}
+
+/* Margins for dynamically rendered message/image cards underneath */
+.custom-cat-container > *:not(h1):not(input):not(button) {
+  margin-top: 20px;
+}
+
+/* homepage component */
+
+/* Container styling */
+.Homa-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; 
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 40px;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe); 
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.Homa-page h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  animation: fadeInDown 0.8s ease-out; 
+}
+
+/* Optional subtitle styling if you want to add description text later */
+/* .Homa-page p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 15px;
+  max-width: 500px;
+  line-height: 1.6;
+} */
+
+/* Simple keyframe for a premium feel on load */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustment for tablets/phones */
+@media (max-width: 768px) {
+  .Homa-page {
+    margin: 20px;
+    padding: 30px 15px;
+    min-height: 40vh;
+  }
+  
+  .Homa-page h1 {
+    font-size: 2.2rem;
+  }
+}
+
